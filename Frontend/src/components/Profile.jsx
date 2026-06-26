@@ -93,7 +93,7 @@ const Profile = () => {
         <div id="profile-page" className="w-full min-h-screen flex flex-col items-center">
 
             <div className="max-sm:flex-col max-sm:gap-2 w-full sticky top-0 z-30 backdrop-blur-md bg-[#1A1A19] border-b border-[#313130] px-6 md:px-12 py-3.5 shadow-sm flex items-center justify-between">
-                <span className="text-gray-500 font-semibold text-md tracking-tight">Profile updated at : {date}</span>
+                <span className="text-gray-500 font-semibold text-md tracking-tight">Profile updated at : {date || '26 June, 2026'}</span>
 
                 <div className="flex items-center min-[340px]:gap-2.5 ">
                     <button onClick={() => navigate('/log-in')} className="px-4 py-2 cursor-pointer rounded-lg text-sm font-medium text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-100 transition-colors">Login</button>
@@ -104,7 +104,7 @@ const Profile = () => {
             <main className="w-120 mx-auto px-6 pt-8">
                 <div className="flex items-center gap-5 mb-8">
                     <div className="w-14 h-14 rounded-full bg-[#032042] border border-blue-800 flex items-center justify-center text-xl font-medium text-[#6CA7EC] shrink-0 select-none">
-                        {getInitials(data?.username)}
+                        {getInitials(data?.username) || null}
                     </div>
                     <div>
                         <h1 className="text-2xl font-medium text-white leading-tight">
@@ -139,7 +139,7 @@ const Profile = () => {
                             </svg>
                             <span className="text-sm text-gray-200">Email</span>
                         </div>
-                        <span className="text-sm font-medium">{data?.email}</span>
+                        <span className="text-sm font-medium">{data?.email || null}</span>
                     </div>
 
                     <div className="flex items-center justify-between px-4 py-3">

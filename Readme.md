@@ -97,6 +97,9 @@ GMAIL_REFRESH_TOKEN=
 GMAIL_USER=jhaashutosh0811@gmail.com
 ```
 
-## [Images](https://github.com/ashutoshJha-2025/complete-authentication-process/tree/main/images)
-- Profile
-- Logout
+## [Images](https://github.com/ashutoshJha-2025/complete-authentication-process/tree/main/Images)
+- [Unverified Profile](https://github.com/ashutoshJha-2025/complete-authentication-process/tree/main/Images/Home.png)
+- [Verified Profile](https://github.com/ashutoshJha-2025/complete-authentication-process/blob/main/Images/Verified.png)
+- [Email Verification Mail](https://github.com/ashutoshJha-2025/complete-authentication-process/blob/main/Images/Verification_Mail.jpg)
+- [Login Alert Mail](https://github.com/ashutoshJha-2025/complete-authentication-process/blob/main/Images/Login_Mail)
+- [Logout Alert Mail](https://github.com/ashutoshJha-2025/complete-authentication-process/blob/main/Images/Logout_Mail)
