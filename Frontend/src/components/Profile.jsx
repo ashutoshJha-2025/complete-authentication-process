@@ -95,13 +95,13 @@ const Profile = () => {
             <div className="max-sm:flex-col max-sm:gap-2 w-full sticky top-0 z-30 backdrop-blur-md bg-[#1A1A19] border-b border-[#313130] px-6 md:px-12 py-3.5 shadow-sm flex items-center justify-between">
                 <span className="text-gray-500 font-semibold text-md tracking-tight">Profile updated at : {date || '26 June, 2026'}</span>
 
-                <div className="flex items-center min-[340px]:gap-2.5 ">
+                <div className="flex items-center max-sm:gap-2.5 ">
                     <button onClick={() => navigate('/log-in')} className="px-4 py-2 cursor-pointer rounded-lg text-sm font-medium text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-100 transition-colors">Login</button>
                     <button onClick={() => logout()} className="px-4 py-2 cursor-pointer rounded-lg text-sm font-medium text-red-600 bg-red-50 hover:bg-red-100 border border-red-100 transition-colors">Logout</button>
                 </div>
             </div>
 
-            <main className="w-120 mx-auto px-6 pt-8">
+            <main className="w-120 max-[500px]:w-100 max-[400px]:w-80 mx-auto px-6 pt-8">
                 <div className="flex items-center gap-5 mb-8">
                     <div className="w-14 h-14 rounded-full bg-[#032042] border border-blue-800 flex items-center justify-center text-xl font-medium text-[#6CA7EC] shrink-0 select-none">
                         {getInitials(data?.username) || null}
